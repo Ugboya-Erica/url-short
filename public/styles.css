@@ -1,0 +1,130 @@
+body, h1, form, input, button {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    background: #6d0545;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background: #a55380;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+}
+
+h1 {
+    color: #42062e;
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+label {
+    font-size: 1rem;
+    color: #555;
+}
+
+input {
+    padding: 10px;
+    border: 2px solid #a88a9e;
+    border-radius: 8px;
+    font-size: 1rem;
+    color: darkorchid;
+    outline-color: #b95794;
+}
+
+
+button {
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    background-color: #550945;
+    color: white;
+    font-size: 1.1rem;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #61093f;
+}
+
+button:active{
+    transform: scale(0.98);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+#qrCode {
+    width: 150px; 
+    height: auto;
+    margin-top: 10px;
+    
+}
+
+
+#result {
+    margin-top: 20px;
+    font-size: 1rem;
+}
+
+a {
+    color: #24031e;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+img {
+    margin-top: 10px;
+    max-width: 200px;
+}
+
+/* animation */
+@keyframes sparkle {
+    0% { opacity: 0; }
+    50% { opacity: 1; }
+    100% { opacity: 0; }
+}
+
+.sparkle {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: #ffccff;
+    border-radius: 50%;
+    box-shadow: 0 0 10px #ffccff;
+    animation: sparkle 1.5s infinite ease-in-out;
+}
+
+.sparkle1 { top: 10%; left: 10%; }
+.sparkle2 { top: 40%; left: 60%; }
+.sparkle3 { top: 70%; left: 10%; }
+.sparkle4 { top: 10%; right: 10%; }
+.sparkle5 { top: 40%; right: 60%; }
+.sparkle6 { top: 70%; right: 10%; }
